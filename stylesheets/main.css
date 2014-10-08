@@ -1,0 +1,724 @@
+/*
+******
+*** Color Scheme
+******
+*/
+
+/* #515151 - Dark gray  */ /* Text and background */
+/* #00b4ff - Blue       */ /* Background          */
+/* #00d5ff - Light blue */ /* Titles              */
+/* #eee    - Light gray */ /* Text                */
+/* #ddd    - Gray       */ /* Background          */
+
+
+/*
+******
+*** General Styling
+******
+*/
+
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+		 -mox-box-sizing: border-box;
+				  box-sizing: border-box;
+}
+
+body {
+	font: 400 16px/22px "Lato", Arial, sans-serif;
+	background: #eee;
+	min-width: 780px;
+}
+
+
+/*
+******
+*** Clearfix
+******
+*/
+
+.clearfix:before,
+.clearfix:after {
+	content: "";
+	display: block;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.clearfix {
+	clear: both;
+}
+
+/*
+******
+*** Text styling
+******
+*/
+
+b {
+	font-weight: 700;
+}
+
+/*
+******
+*** Buttons
+******
+*/
+
+.btn {
+
+}
+
+/*
+******
+*** Buttons
+******
+*/
+
+
+.triangle-right {
+	width: 0px;
+	height: 0px;
+	position: relative;
+	border-top: solid 10px transparent;
+	border-bottom: solid 10px transparent;
+	border-left: solid 10px rgba(170, 170, 170, 0.7);
+}
+
+.triangle-left {
+	width: 0px;
+	height: 0px;
+	position: relative;
+	border-top: solid 15px transparent;
+	border-bottom: solid 15px transparent;
+	border-right: solid 15px rgba(170, 170, 170, 0.7);
+}
+
+.triangle-up {
+	width: 0px;
+	height: 0px;
+	position: relative;
+	border-right: solid 10px transparent;
+	border-left: solid 10px transparent;
+	border-bottom: solid 10px rgba(170, 170, 170, 0.7);
+}
+
+.triangle-down {
+	width: 0px;
+	height: 0px;
+	position: relative;
+	border-right: solid 10px transparent;
+	border-left: solid 10px transparent;
+	border-top: solid 10px rgba(170, 170, 170, 0.7);
+}
+
+
+/*
+******
+*** Vertical align tool
+******
+*/
+
+.vertical-wrapper {
+	display: block;
+	text-align: center;
+}
+
+.vertical-wrapper:before {
+	content: '';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+	margin-right: -0.25em;
+}
+
+.vertical-align {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+/*
+******
+*** Row columns
+******
+*/
+
+.row {
+	width: 100%;
+	padding: 2% 8% 5% 8%;
+}
+
+.col-1-3,
+.col-2-3,
+.col-1-4,
+.col-2-4,
+.col-3-4 {
+	height: 100%;
+	float: left;
+	display: inline-block;
+	position: relative;
+	padding-top: 35px;
+	margin: 0 auto;
+}
+
+.col-1-3 {
+	width: 33.33%;
+}
+
+.col-2-3 {
+	width: 66.66%;
+}
+
+.col-1-4 {
+	width: 25%;
+}
+
+.col-2-4 {
+	width: 50%;
+}
+
+.col-3-4 {
+	width: 75%;
+}
+
+.col-footer {
+	text-align: center;
+	display: block;
+	width: 100%;
+	padding: 0 10px;
+	position: absolute;
+	bottom: 15px;
+}
+
+/*
+******
+*** Header
+******
+*/
+
+.hero {
+	width: 100vw;
+	height: 100vh;
+	background: url("../images/pics/hero-image.jpg") no-repeat fixed;
+	background-size: 100vw 100vh;
+	background-origin: padding-box;
+}
+
+.hero-box {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	padding: 0 100px;
+}
+
+.hero-text {
+	position: relative;
+	transform: translateY(-50%);
+	font-size: 3em;
+	letter-spacing: .15em;
+	line-height: 1.2em;
+	color: #ddd;
+	font-weight: 700;
+	text-align: center;
+}
+
+.hero-box .text-top {
+	position: relative;
+	top: 15%;
+}
+
+.hero-box .text-bottom {
+	position: relative;
+	top: 75%;
+}
+
+.hero-arrow {
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	width: 75px;
+	height: 75px;
+	opacity: 0.5;
+	transform: translate(-50%, -50%);
+}
+
+.hero-arrow:hover {
+	opacity: 0.8;
+}
+
+/*
+******
+*** Main menu
+******
+*/
+
+.main-menu {
+	position: fixed;
+	left: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 5;
+}
+
+.main-menu li {
+	position: relative;
+	width: 65px;
+	height: 65px;
+	background: rgba(175,175,175,0.6);
+	border-radius: 50%;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.main-menu img {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 35px;
+	height: 35px;
+}
+
+.main-menu a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	padding-top: 10px;
+}
+
+
+/*
+******
+*** Footer
+******
+*/
+
+.main-footer {
+	background: #515151;
+	color: #eee;
+	padding: 30px 15%;
+	width: 100%;
+}
+
+.footer-heading {
+	color: #eee;
+	border-bottom: solid 1px #00b4ff;
+	text-align: center;
+	padding-bottom: 20px;
+	font-size: 1.4em;
+}
+
+/*
+******
+*** Topics
+******
+*/
+
+.topic {
+	width: 100%;
+	clear: both;
+}
+
+.title-container {
+	position: relative;
+	height: 100px;
+}
+
+.topic-title {
+	position: relative;
+	top: 50%;
+	transform: translate(0, -50%);
+	font: 200 3.5em "Raleway", Tahoma, Arial, sans-serif;
+	letter-spacing: 5px;
+	text-align: center;
+}
+
+.topic-body {
+	min-height: 500px;
+	padding: 50px;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.about-me,
+.experience {
+	background: #515151;
+}
+
+.skills,
+.contact {
+	background: #ddd;
+}
+
+.languages {
+	background: #00b4ff;
+}
+
+
+.about-me,
+.languages .topic-title,
+.experience {
+	color: #eee;
+}
+
+.about-me .topic-title,
+.experience .topic-title {
+	color: #00b4ff;
+}
+
+.skills,
+.contact,
+.languages,
+.skills .topic-title,
+.contact .topic-title {
+	color: #515151;
+}
+
+/*
+******
+*** About me
+******
+*/
+
+.about-me .topic-body {
+	padding-left: 75px;
+	height: 500px;
+}
+
+.about-me-pic {
+	position: relative;
+	max-width: 150px;
+	max-height: 150px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+.about-me-pic img {
+	position: relative;
+	max-width: 130%;
+	max-height: 130%;
+	right: 15%;
+}
+
+.about-me-info {
+	padding-top: 20px;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 25px;
+}
+
+.home-country {
+	height: 20px;
+	vertical-align: middle;
+	margin-left: 5px;
+}
+
+.about-me-description {
+	padding-top: 6%;
+	padding-left: 40px;
+	text-align: justify;
+	font-weight: 300;
+	font-size: 1.3em;
+	line-height: 30px;
+	letter-spacing: 1px;
+	border-left: 1px solid #eee;
+	vertical-align: middle;
+}
+
+/*
+******
+*** Skills
+******
+*/
+
+.skills .topic-body {
+	height: 500px;
+}
+
+.skills-col {
+	border-right: solid 1px #515151;
+	padding-top: 15px;
+}
+
+.skills-col * {
+	width: 100%;
+}
+
+.skills-col:last-child {
+	border-right: none;
+}
+
+.skills-col .skills-title {
+	color: #00b4ff;
+	font-size: 1.5em;
+	font-weight: 300;
+	text-align: center;
+	margin-bottom: 15px;
+	padding: 0 5px;
+}
+
+.skills-col ul {
+	padding: 5px 5px 5px 27%;
+}
+
+.skills-col li {
+	border-left: 2px solid #00b4ff;
+	margin-top: 10px;
+	padding-left: 15px;
+	font-weight: 700;
+}
+
+/*
+******
+*** Languages
+******
+*/
+
+.languages .topic-body {
+	padding-left: 100px;
+	padding-right: 100px;
+}
+
+.languages-table {
+	width: 100%;
+	margin: 0 auto;
+	vertical-align: middle;
+}
+
+.languages-table th,
+.languages-table td {
+	vertical-align: middle;
+}
+
+.languages-table th {
+	color: #515151;
+	font-size: 1.9em;
+	font-weight: 300;
+	padding: 0 20px 30px 20px;
+}
+
+.languages-table td {
+	position: relative;
+	border-bottom: 1px solid #515151;
+	font-size: 1.1em;
+	font-weight: 300;
+	padding: 25px 20px 20px; 
+	color: #eee;
+}
+
+.language-name img {
+	width: 25px;
+	height: auto;
+}
+
+.language-name .name {
+	position: relative;
+	left: 15%;
+}
+
+.language-level {
+	text-align: center;
+}
+
+.languages-table .language-observations {
+	padding-left: 10%;
+}
+
+/*
+******
+*** Experience
+******
+*/
+
+.experience .timeline {
+	border-left: solid 2px #eee;
+	width: 100%;
+	height: 100%;
+	margin-left: 65px;
+	margin-right: 1px;
+	padding: 1% 5% 3% 40px;
+}
+
+.experience .card {
+	position: relative;
+	margin-bottom: 35px;
+	text-align: center;
+	background: #eee;
+	color: #515151;
+	border-radius: 20px;
+	padding: 15px;
+	box-shadow: inset 0px 0px 10px 4px #aaa, 0px 0px 4px 1px #aaa;
+	font: 300 0.95em/1.5em "Lato", Arial, sans-serif;
+	max-width: 1000px;
+}
+
+.card:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.card-title {
+	font-size: 1.3em;
+	color: #00b4ff;
+	letter-spacing: .11em;
+	padding: 15px 0;
+}
+
+.card-body {
+	font-weight: 400;
+	text-align: justify;
+	padding: 10px 0;
+	letter-spacing: .1em;
+	padding-bottom: 20px;
+	border-bottom: solid 1px #515151;
+	margin: 0 15px;
+}
+
+.card-location {
+	position: absolute;
+	right: 30px;
+	top: 30px;
+}
+
+.card-location img {
+	width: 15px;
+	height: auto;
+}
+
+.card-footer {
+	padding: 10px;
+}
+
+.card-time {
+	position: relative;
+	float: right;
+	font-size: 0.8em;
+	line-height: 45px;
+}
+
+.card-company {
+	position: relative;
+	float: left;
+	font-size: 0.8em;
+	width: 50%;
+}
+
+.card-company .company-logo {
+	height: 45px;
+	width: auto;
+	float: left;
+}
+
+.card-company .company-name {	
+	float: right;
+	line-height: 45px;
+	transform: translateX(50%);
+}
+
+.card .timeline-point {
+	display: block;
+	position: absolute;
+	width: 35px;
+	height: 35px;
+	background: #00b4ff;
+	border-radius: 50%;
+	border: solid 2px #eee;
+	top: 25%;
+	left: -40px;
+	z-index: 100;
+	transform: translate(-50%, -50%);
+}
+
+.card .triangle-left {
+	position: absolute;
+	left: 0;
+	top: 25%;
+	transform: translate(-100%, -50%);
+}
+
+
+/*
+******
+*** Contact me
+******
+*/
+
+.contact-entry *::selection {
+	background: rgba(255,255,255,0);
+}
+
+.contact-entry .contact-info::selection {
+	background: rgba(0,180,255,0.6);
+}
+
+.contact-entry .align::selection {
+	background: rgba(0,180,255,0.6);
+}
+
+.contact-box .circle-box {
+	position: relative;
+	border-radius: 50%;
+	width: 150px;
+	height: 150px;
+	margin: 0 auto 30px auto;
+	box-shadow: -5px -2px 4px 5px #111;
+	cursor: pointer;
+}
+
+.circle-box .contact-image {
+	width: 75px;
+	height: auto;
+}
+
+.contact-entry .contact-info {
+	font: 700 1.1em/22px "Lato", Tahoma, Arial, sans-serif;
+	letter-spacing: .1em;
+}
+
+.contact-info {
+	display: inline-block;
+	width: 150px;
+	text-align: center;
+	border-bottom: solid 1px #00b4ff;
+	padding-bottom: 10px;
+}
+
+.contact-entry a {
+	text-decoration: none;
+}
+
+.skype .circle-box, 
+.linkedin .circle-box {
+	background: #515151;
+	background-image: radial-gradient(rgba(255,255,255,0.3), rgba(81,81,81,0.7));
+}
+
+.email .circle-box {
+	background: #00b4ff;
+	background-image: radial-gradient(rgba(255,255,255,0.4), rgba(81,81,81,0.7));
+}
+
+.circle-box:active {
+	position: relative;
+	left: -3px;
+	top: -3px;
+	box-shadow: -5px -2px 4px 3px #111;
+}
+
+.contact-box {
+	text-align: center;
+}
+
+
+.contact-info .align {
+	position: relative;
+	left: -23%;
+}
